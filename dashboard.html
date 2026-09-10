@@ -9,36 +9,6 @@
 *{box-sizing:border-box}html{-webkit-tap-highlight-color:transparent}body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#f8fafc;background:radial-gradient(circle at 15% 0%,#183b66 0,#0b1728 38%,#050a12 100%);padding:18px 14px 28px}.container{width:100%;max-width:520px;margin:auto}.top{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:linear-gradient(145deg,rgba(21,43,71,.96),rgba(7,15,27,.96));border-radius:30px;padding:26px 20px 22px;box-shadow:0 20px 55px rgba(0,0,0,.35)}.top:after{content:"";position:absolute;width:180px;height:180px;right:-75px;top:-80px;border-radius:50%;background:rgba(56,189,248,.13);filter:blur(2px)}.profile{position:relative;z-index:1;display:flex;align-items:center;gap:15px}.avatar{width:76px;height:76px;border-radius:24px;object-fit:cover;border:3px solid rgba(255,255,255,.9);box-shadow:0 8px 25px rgba(0,0,0,.3);background:#172033}.name{font-size:23px;font-weight:800;letter-spacing:-.4px;margin:0 0 5px}.place{margin:0;color:#b9c7d8;font-size:13px;line-height:1.45}.badge{display:inline-flex;align-items:center;gap:6px;margin-top:9px;padding:6px 10px;border-radius:999px;background:rgba(34,197,94,.12);border:1px solid rgba(74,222,128,.3);color:#86efac;font-size:11px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 9px #4ade80}.brand{position:relative;z-index:1;margin-top:22px}.brand h1{margin:0;font-size:27px;letter-spacing:-.7px}.brand p{margin:5px 0 0;color:#aebed1;font-size:12px}.demo{margin-top:14px;padding:10px 12px;border-radius:13px;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2);color:#fcd34d;font-size:11px;font-weight:700;text-align:center}.title{font-size:17px;margin:25px 4px 13px;color:#e5edf7}.cards{display:grid;gap:12px}.card{text-decoration:none;color:inherit;display:flex;align-items:center;gap:14px;padding:17px;border-radius:21px;border:1px solid rgba(255,255,255,.1);background:rgba(17,29,47,.86);box-shadow:0 9px 26px rgba(0,0,0,.18);transition:transform .15s ease,border-color .15s ease,background .15s ease}.card:active{transform:scale(.985)}.icon{width:55px;height:55px;border-radius:17px;display:grid;place-items:center;font-size:27px;background:linear-gradient(145deg,#1d3555,#101d30);border:1px solid rgba(255,255,255,.1);flex:none}.card h3{margin:0 0 4px;font-size:16px}.card p{margin:0;color:#91a2b7;font-size:12px}.arrow{margin-left:auto;color:#8db9df;font-size:27px;font-weight:300}.logout{width:100%;margin-top:17px;padding:15px;border:1px solid rgba(248,113,113,.2);border-radius:17px;background:rgba(127,29,29,.22);color:#fecaca;font-size:15px;font-weight:700;cursor:pointer}.footer{text-align:center;color:#64748b;font-size:10px;margin:18px 0 0;line-height:1.5}@media(min-width:600px){body{padding-top:35px}.top{padding:30px 25px}.card:hover{border-color:rgba(125,211,252,.25);background:rgba(20,37,59,.95)}}
 </style>
 </head>
-<body>
-<div class="container">
-<section class="top">
-<div class="profile">
-<img class="avatar" src="bharat-card-profile.jpg" alt="Rakesh Baraiya profile photo">
-<div><h2 class="name">Rakesh Baraiya</h2><p class="place">Biladi, Mahuva, Bhavnagar, Gujarat</p><span class="badge"><i class="dot"></i> Secure / Protected</span></div>
-</div>
-<div class="brand"><h1>🇮🇳 Bharat Card</h1><p>Personal Digital Organizer</p></div>
-<div class="demo">DEMO • NOT A GOVERNMENT ID</div>
-</section>
-<h2 class="title">તમારો દસ્તાવેજ પસંદ કરો</h2>
-<div class="cards">
-<a class="card" href="aadhaar.html"><div class="icon">🪪</div><div><h3>Aadhaar Card</h3><p>Demo Aadhaar document</p></div><div class="arrow">›</div></a>
-<a class="card" href="pan.html"><div class="icon">💳</div><div><h3>PAN Card</h3><p>Demo PAN document</p></div><div class="arrow">›</div></a>
-<a class="card" href="voter.html"><div class="icon">🗳️</div><div><h3>Election Card</h3><p>Demo Election document</p></div><div class="arrow">›</div></a>
-</div>
-<button class="logout" type="button" onclick="logout()">🔒 Logout</button>
-<div class="footer">Bharat Card • Personal digital organizer/demo<br>Not issued by or affiliated with any government authority.</div>
-</div>
-<script>
-(function(){
-  if (sessionStorage.getItem("bharatCardAuthenticated") !== "true") {
-    window.location.replace("index.html");
-  }
-})();
-
-function logout(){
-  sessionStorage.removeItem("bharatCardAuthenticated");
-  window.location.replace("index.html");
-}
-</script>
-</body>
-</html>
+<body><div class="container"><section class="top"><div class="profile"><img class="avatar" src="bharat-card-profile.jpg" alt="Rakesh Baraiya profile photo"><div><h2 class="name">Rakesh Baraiya</h2><p class="place">Biladi, Mahuva, Bhavnagar, Gujarat</p><span class="badge"><i class="dot"></i> Secure / Protected</span></div></div><div class="brand"><h1>🇮🇳 Bharat Card</h1><p>Personal Digital Organizer</p></div><div class="demo">DEMO • NOT A GOVERNMENT ID</div></section><h2 class="title">તમારો દસ્તાવેજ પસંદ કરો</h2><div class="cards"><a class="card" href="aadhaar.html"><div class="icon">🪪</div><div><h3>Aadhaar Card</h3><p>Demo Aadhaar document</p></div><div class="arrow">›</div></a><a class="card" href="pan.html"><div class="icon">💳</div><div><h3>PAN Card</h3><p>Demo PAN document</p></div><div class="arrow">›</div></a><a class="card" href="voter.html"><div class="icon">🗳️</div><div><h3>Election Card</h3><p>Demo Election document</p></div><div class="arrow">›</div></a></div><button class="logout" type="button" onclick="logout()">🔒 Logout</button><div class="footer">Bharat Card • Personal digital organizer/demo<br>Not issued by or affiliated with any government authority.</div></div>
+<script>(function(){if(sessionStorage.getItem('bharatCardAuthenticated')!=='true'){window.location.replace('index.html');return;}sessionStorage.removeItem('aadhaarUnlocked');sessionStorage.removeItem('panUnlocked');})();function logout(){sessionStorage.clear();window.location.replace('index.html');}</script>
+</body></html>
