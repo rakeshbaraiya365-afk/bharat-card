@@ -28,6 +28,17 @@
 <button class="logout" type="button" onclick="logout()">🔒 Logout</button>
 <div class="footer">Bharat Card • Personal digital organizer/demo<br>Not issued by or affiliated with any government authority.</div>
 </div>
-<script>function logout(){window.location.href='index.html';}</script>
+<script>
+(function(){
+  if (sessionStorage.getItem("bharatCardAuthenticated") !== "true") {
+    window.location.replace("index.html");
+  }
+})();
+
+function logout(){
+  sessionStorage.removeItem("bharatCardAuthenticated");
+  window.location.replace("index.html");
+}
+</script>
 </body>
 </html>
